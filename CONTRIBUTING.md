@@ -229,3 +229,11 @@ All contributors are expected to follow our [Code of Conduct](CODE_OF_CONDUCT.md
 ---
 
 Thank you for helping make the BOSC Community Library better for everyone!
+
+## Metadata Validation
+
+When adding a new resource, always verify the toatalResources
+count matches atual entries:
+
+```bash
+```
