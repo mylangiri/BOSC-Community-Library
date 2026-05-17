@@ -1,0 +1,22 @@
+ OS artifacts
+cat > .gitignore << 'EOF'
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+ .vscode/
+ .idea/
+ *.swp
+*~
+
+ # Python
+ __pycache__/
+ *.pyc
+ .env
+ venv/
+
+ # Logs
+*.log
+ *.tmp
