@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# validate_resources.py — Resource database validator for BOSC Community Library
 """
 BOSC Community Library - Resource Database Validator
 Usage: python3 scripts/validate_resources.py
