@@ -1,22 +1,36 @@
-# Searching the BOSC Resource Database
+# Search Guide — BOSC Community Library
 
-## jq Queries
-'''bash
-# List all resource titles
-jq '.resources[].title' resources/databases/resources.json
+This guide explains how to search and navigate resources in this library.
 
-# Filter by language
-jq '.resources[] | select(.language == "fr")'
-resources/databases/resources.json
-# Filter by difficulty
-jq '.resources[] | select(.difficulty == "beginner") | .title'
-resources/databases/resources.json
+## Searching the JSON Database
 
-# Filter by Category
-jq '.resources[] | select(.category == "Mathematics")'
-resources/databases/resources.json
+The resource database is located at `resources/databases/resources.json`.
 
-# Count resources by Category
-jq '.resources | group_by(.category) | map({category: .[0].category,
-count: length})' resources/databases/resources.json
-'''
+### Fields You Can Search By
+
+| Field | Description | Example |
+|-------|-------------|---------|
+| `category` | Subject area | `"Mathematics"` |
+| `language` | Resource language | `"Swahili"` |
+| `difficulty` | Level | `"Beginner"` |
+| `format` | Type of resource | `"Video"` |
+| `license` | License type | `"CC-BY"` |
+| `tags` | Keywords | `["algebra", "open"]` |
+
+## How to Search Manually
+
+1. Open `resources/databases/resources.json`
+2. Use `Ctrl+F` to search by keyword
+3. Filter by `category`, `language`, or `difficulty`
+
+## Programmatic Search
+
+Run the validation script to check all entries:
+
+```bash
+python scripts/validate_resources.py
+```
+
+## Adding New Resources
+
+Follow the schema defined in `CONTRIBUTING.md` before submitting a PR.
