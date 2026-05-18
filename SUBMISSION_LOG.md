@@ -1,10 +1,10 @@
 # Submission Log — BSCT 3221 Final Take-Home Exam
 
-**Student:** [Your Name]  
-**Student ID:** [Your Student ID]  
+**Student:** [Michael Thomas Marndulu Dingiso]  
+**Student ID:** [20/BCN/BU/R/0009]  
 **Course:** BSCT 3221 — Open Source Software  
 **Submission Date:** 12 May 2026  
-**Repository:** https://github.com/YOUR_USERNAME/BOSC-Community-Library  
+**Repository:** https://github.com/mylangiri/BOSC-Community-Library  
 
 ---
 
